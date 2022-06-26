@@ -5,12 +5,14 @@
 </template>
 
 <script>
-import './index.less'
+import { ref } from 'vue'
+import './index.scss'
 
 export default {
-  data () {
+  setup () {
+    const msg = ref('Hello world')
     return {
-      msg: 'Hello world!'
+      msg
     }
   }
 }
